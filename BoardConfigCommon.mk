@@ -214,6 +214,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/vintf/framework_manifest.xml
 
 # Verified Boot
+VENDOR_SECURITY_PATCH := 2026-02-01
 ifeq ($(VENDOR_SECURITY_PATCH),)
 $(error "VENDOR_SECURITY_PATCH must be set for vbmeta rollback index")
 endif
